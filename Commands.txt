@@ -1,0 +1,44 @@
+1- Create Topic:-
+
+Kafka-topics --create \
+ --bootstrap-server cmhost:9092 \
+ --replication-factor 1 \
+ --partitions 2 \
+ --topic logs
+
+
+2- Display all topics:-
+
+Kafka-topics --list\
+  --bootstrap-server cmhost:9092
+
+3- Review the details of logs topic:-
+
+Kafka-topics --describe --topic logs \
+ --bootstrap-server cmhost:9092
+
+
+Producing and Consuming Messages
+
+
+4- Start a Kafka Producer for logs topic
+
+Kafka-console-producer \
+ --broker=list cmhost:9092
+ --topic logs
+
+
+
+5-Publish test Message
+
+test log entry 1
+
+
+6- open new terminal
+
+7- start consumer to real all data in topic
+
+Kafka-console-consumer \ 
+  --bootstrap-server cmhost:9092
+  --topic logs \
+  --from-beginning
