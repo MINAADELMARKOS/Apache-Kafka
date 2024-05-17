@@ -3,7 +3,7 @@
 - Apache Kafka is a distributed streaming platform that provides a unified, high-throughput, low-latency platform for handling real-time data feeds. It is widely used for building real-time data pipelines and streaming applications.
 
 <center>
-<img src="Data_Ai.jpg" alt="" width="800px" height="300px">
+<img src="apache-kafka.png" alt="" width="700px" height="300px">
 </center>
 
 
